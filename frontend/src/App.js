@@ -18,6 +18,8 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
+import Chat from './sockets/Chat.js'
+import Join from './sockets/Join.js'
 
 const App = () => {
   return (
@@ -56,6 +58,9 @@ const App = () => {
             exact
           />
           <Route path='/' component={HomeScreen} exact />
+
+          <Route path='/join' component={Join} />
+          {/* <Route path='/chat' component={Chat} /> */}
         </Container>
       </main>
       <Footer />

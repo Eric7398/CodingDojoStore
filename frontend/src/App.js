@@ -18,11 +18,14 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
+import Chat from './sockets/Chat.js'
+import Join from './sockets/Join.js'
 
 const App = () => {
   return (
     <Router>
       <Header />
+
       <div>
         <div id="section1">
           <h1 style={{textAlign: "center", paddingTop:"18%", fontSize: "6rem", color: "white"}}>Code in style<p><a href="#section2"><i class="fas fa-angle-double-down"></i></a></p></h1>

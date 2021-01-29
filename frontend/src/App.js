@@ -23,41 +23,47 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main className='py-3'>
-        <Container>
-          <Route path='/order/:id' component={OrderScreen} />
-          <Route path='/shipping' component={ShippingScreen} />
-          <Route path='/payment' component={PaymentScreen} />
-          <Route path='/placeorder' component={PlaceOrderScreen} />
-          <Route path='/login' component={LoginScreen} />
-          <Route path='/register' component={RegisterScreen} />
-          <Route path='/profile' component={ProfileScreen} />
-          <Route path='/product/:id' component={ProductScreen} />
-          <Route path='/cart/:id?' component={CartScreen} />
-          <Route path='/admin/userlist' component={UserListScreen} />
-          <Route path='/admin/user/:id/edit' component={UserEditScreen} />
-          <Route
-            path='/admin/productlist'
-            component={ProductListScreen}
-            exact
-          />
-          <Route
-            path='/admin/productlist/:pageNumber'
-            component={ProductListScreen}
-            exact
-          />
-          <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
-          <Route path='/admin/orderlist' component={OrderListScreen} />
-          <Route path='/search/:keyword' component={HomeScreen} exact />
-          <Route path='/page/:pageNumber' component={HomeScreen} exact />
-          <Route
-            path='/search/:keyword/page/:pageNumber'
-            component={HomeScreen}
-            exact
-          />
-          <Route path='/' component={HomeScreen} exact />
-        </Container>
-      </main>
+      <div>
+        <div id="section1">
+          <h1 style={{textAlign: "center", paddingTop:"18%", fontSize: "6rem", color: "white"}}>Code in style<p><a href="#section2"><i class="fas fa-angle-double-down"></i></a></p></h1>
+          
+        </div>
+        <main id="section2" className='py-3' style={{paddingTop:"300px", marginTop:"600px", marginBottom:"0px", height:"100%", backgroundColor:"#272b30", zIndex:"0"}}>
+          <Container>
+            <Route path='/order/:id' component={OrderScreen} />
+            <Route path='/shipping' component={ShippingScreen} />
+            <Route path='/payment' component={PaymentScreen} />
+            <Route path='/placeorder' component={PlaceOrderScreen} />
+            <Route path='/login' component={LoginScreen} />
+            <Route path='/register' component={RegisterScreen} />
+            <Route path='/profile' component={ProfileScreen} />
+            <Route path='/product/:id' component={ProductScreen} />
+            <Route path='/cart/:id?' component={CartScreen} />
+            <Route path='/admin/userlist' component={UserListScreen} />
+            <Route path='/admin/user/:id/edit' component={UserEditScreen} />
+            <Route
+              path='/admin/productlist'
+              component={ProductListScreen}
+              exact
+            />
+            <Route
+              path='/admin/productlist/:pageNumber'
+              component={ProductListScreen}
+              exact
+            />
+            <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
+            <Route path='/admin/orderlist' component={OrderListScreen} />
+            <Route path='/search/:keyword' component={HomeScreen} exact />
+            <Route path='/page/:pageNumber' component={HomeScreen} exact />
+            <Route
+              path='/search/:keyword/page/:pageNumber'
+              component={HomeScreen}
+              exact
+            />
+            <Route path='/' component={HomeScreen} exact />
+          </Container>
+        </main>
+      </div>
       <Footer />
     </Router>
   )

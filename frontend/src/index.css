@@ -1,24 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('/images/Retail.jpg');
+  height: 500px;
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 main {
   min-height: 80vh;
 }
 
 h3 {
   padding: 1rem 0;
+  font-size: 2rem;
+  font-family: 'Text Me One', sans-serif;
 }
 
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.884);
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0.5rem 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .rating span {
   margin: 0.1rem;
 }
+
+#wrapper {
+  margin: 0px;
+  padding: 0px;
+}
+
 
 /* carousel */
 .carousel-item-next,
@@ -39,7 +66,7 @@ h2 {
   height: 300px;
   padding: 30px;
   margin: 40px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,3 +78,4 @@ h2 {
     font-size: 2.5vw;
   }
 }
+

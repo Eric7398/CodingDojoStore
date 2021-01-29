@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <header >
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
@@ -25,8 +25,8 @@ const Header = () => {
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Route render={({ history }) => <SearchBox history={history} />} />
-            <Nav className='ml-auto'>
+          
+            <Nav className='ml-auto '>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i> Cart
@@ -61,6 +61,7 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
+               <Route render={({ history }) => <SearchBox history={history} />} />
             </Nav>
           </Navbar.Collapse>
         </Container>

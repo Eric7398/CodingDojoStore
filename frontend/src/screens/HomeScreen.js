@@ -40,13 +40,14 @@ const HomeScreen = ({ match, location }) => {
     <>
       <Meta />
       {!keyword ? (
-        <ProductCarousel />
+        ""
       ) : (
-          <Link to='/' className='btn btn-light'>
-            Go Back
-          </Link>
-        )}
-      <h1>Latest Products</h1>
+        <Link to='/' className='btn btn-light'>
+          Go Back
+        </Link>
+      )}
+      <h1>Featured Collection</h1>
+
       {loading ? (
         <Loader />
       ) : error ? (

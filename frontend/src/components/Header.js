@@ -25,6 +25,18 @@ const Header = () => {
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
+
+          <LinkContainer to='/Men'>
+                    <Nav.Link>
+                    <i class="fas fa-male"></i> Men
+                  </Nav.Link>
+              </LinkContainer>
+
+              <LinkContainer to='/Women'>
+                    <Nav.Link>
+                    <i class="fas fa-female"></i> Women
+                  </Nav.Link>
+              </LinkContainer>
           
             <Nav className='ml-auto '>
               <LinkContainer to='/cart'>
@@ -32,6 +44,7 @@ const Header = () => {
                   <i className='fas fa-shopping-cart'></i> Cart
                 </Nav.Link>
               </LinkContainer>
+
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
@@ -61,7 +74,7 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
-               <Route render={({ history }) => <SearchBox history={history} />} />
+                <Route render={({ history }) => <SearchBox history={history} />} />
             </Nav>
           </Navbar.Collapse>
         </Container>

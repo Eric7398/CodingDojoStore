@@ -72,7 +72,7 @@ const ProductScreen = ({ history, match }) => {
           <Row style={{paddingTop:"70px"}}>
             <div style={{marginRight:"130px"}}>
               <div>
-                <Image src={product.image} alt={product.name} fluid style={{width:"515px", marginRight:"20px"}}/>
+                <Image src={product.image} alt={product.name} fluid style={{width:"460px", marginRight:"10px"}}/>
               </div>
             </div>
 

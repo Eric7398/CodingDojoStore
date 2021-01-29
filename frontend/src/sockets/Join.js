@@ -13,27 +13,27 @@ const Join = () => {
       <div>
         <button className="open-button" onClick={() => setToggleForm(true)}>Chat</button>
         <div className={toggleForm ? "chat-popup form-container" : "chat-popdown"}>
-          <h1>Join</h1>
+          <h2>Ask a question!</h2>
           <div>
             <input
-              placeholder="Name"
+              placeholder="Your Name"
               type="text"
               onChange={e => setName(e.target.value)} />
           </div>
           <div>
             <input
-              placeholder="Room"
+              placeholder="Question"
               type="text"
               onChange={e => setRoom(e.target.value)} />
           </div>
           <Link
             onClick={e => (!name || !room) ? e.preventDefault() : null}
             to={`/?name=${name}&room=${room}`}>
-            <button className="signin-button" type="submit">Sign In</button>
+            <button className="signin-button" type="submit">Submit</button>
           </Link>
           <button className="btn cancel" onClick={() => setToggleForm(false)}>Close</button>
         </div>
-        <button className="btn cancel" onClick={() => setToggleForm(false)}>Close</button>
+        {/* <button className="btn cancel" onClick={() => setToggleForm(false)}>Close</button> */}
       </div>
     </div >
 
